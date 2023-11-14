@@ -3,6 +3,9 @@ import dolor from './poems/dolor.json' assert { type: 'json' };
 import invierno from './poems/invierno.json' assert { type: 'json' };
 import sevilla from './poems/sevilla.json' assert { type: 'json' };
 
+const poemsContainer = document.getElementById("poem-container");
+const poemTitle = document.getElementById("poem-title");
+const poemContent = document.getElementById("poem-content");
 
 let curImg = 1;
 let bgImgs = document.querySelectorAll(".bg-imgs img");
@@ -12,15 +15,11 @@ let bgImgs = document.querySelectorAll(".bg-imgs img");
         bgImgs[prevImg].style.opacity = 0;
         bgImgs[curImg].style.opacity = 100;
         curImg++;
-
+        
         if (curImg >= bgImgs.length) {
             curImg = 0;
         }
 }, 100000);
-
-const poemsContainer = document.getElementById("poem-container");
-const poemTitle = document.getElementById("poem-title");
-const poemContent = document.getElementById("poem-content");
 
 function addPoem(poem) {
     const newPoemP = document.createElement("p")

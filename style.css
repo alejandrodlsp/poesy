@@ -5,17 +5,16 @@ body {
   background-size: cover;
   font-family: "Inconsolata", monospace;
   color: white;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
+
 
 .bg-imgs img {
     object-fit: cover;
     position: absolute;
     z-index: -1;
     height: 100%;
-    margin: 0;
-    padding: 0;
     width: 100%;
     opacity: 0%;
     transition-delay: 5s;
@@ -23,7 +22,6 @@ body {
 }
 
 .header {
-    padding-top: 1rem;
     display: flex;
     justify-content: space-evenly;
 }
