@@ -1,0 +1,86 @@
+body {
+  background: url("https://cdn8.openculture.com/2021/07/28085013/temptationofanthony.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Inconsolata", monospace;
+  color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 3rem;
+}
+
+.poem-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+}
+
+.poem-container p {
+    margin: 1rem;
+}
+
+.poem-container p:hover {
+    cursor: pointer;
+    color: rgb(128, 127, 127);
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.subcontainer {
+    font-size: max(1vw, 15px);
+    white-space: pre-wrap;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container p {
+    margin: 0;
+    padding: 0;
+}
+
+#poem-title {
+    font-size: max(1.5vw, 20px);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer svg {
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        display: none;
+    }
+    .container {
+        text-align: center;
+    }
+    .poem-container {
+        font-size: 1rem;
+    }
+}
