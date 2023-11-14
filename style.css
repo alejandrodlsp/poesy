@@ -87,8 +87,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .title {
-        display: none;
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .container {
         text-align: center;
