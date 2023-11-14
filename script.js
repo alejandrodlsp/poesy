@@ -4,6 +4,20 @@ import invierno from './poems/invierno.json' assert { type: 'json' };
 import sevilla from './poems/sevilla.json' assert { type: 'json' };
 
 
+let curImg = 1;
+let bgImgs = document.querySelectorAll(".bg-imgs img");
+    setInterval(() => {
+        let prevImg = curImg? curImg-1: bgImgs.length-1;
+
+        bgImgs[prevImg].style.opacity = 0;
+        bgImgs[curImg].style.opacity = 100;
+        curImg++;
+
+        if (curImg >= bgImgs.length) {
+            curImg = 0;
+        }
+}, 100000);
+
 const poemsContainer = document.getElementById("poem-container");
 const poemTitle = document.getElementById("poem-title");
 const poemContent = document.getElementById("poem-content");
